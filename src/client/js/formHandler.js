@@ -2,18 +2,17 @@ function handleSubmit(event) {
     event.preventDefault()
 
     const data = {}
-    // check what text was put into the form field
+    // save user input to formText
     let formText = document.getElementById('name').value
-    Client.checkFormData(formText)
     data.url = formText
 
     console.log("::: Form Submitted :::")
-    console.log("value: " +formText)
     console.log("value: " +data.url)
 
-    Client.checkFormData('http://localhost:8085/api', data)
+    Client.checkFormData('http://localhost:3000/api', data)
     .then(function(res) {
-        //update UI according to response
+        
+        //update UI according to 
         Client.updateUI(res);
     })
 }

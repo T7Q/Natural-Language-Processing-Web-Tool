@@ -1,6 +1,5 @@
 var path = require('path');
 const express = require('express');
-// const mockAPIResponse = require('./mockAPI.js')
 var bodyParser = require('body-parser');
 const cors = require('cors');
 const aylien = require('aylien_textapi');
@@ -19,8 +18,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Set up server: designates what port the app will listen to for incoming requests
-app.listen(8085, function () {
-    console.log('Example app listening on port 8085!')
+app.listen(3000, function () {
+    console.log('Example app listening on port 3000!')
 })
 
 // set dotenv
@@ -45,12 +44,9 @@ app.get('/', function (req, res) {
 app.post('/api', function (req, res) {
     textapi.sentiment(req.body, function(error, response) {
         if (error === null) {
-            if (error === null) {
-                res.status(200).send(response);
-            } else {
-                res.status(422).send(error);
-            }
+            res.status(200).send(response);
+        } else {
+            res.status(422).send(error);
         }
-      });
- 
+    });
 })
