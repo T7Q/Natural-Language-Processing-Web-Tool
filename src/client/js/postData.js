@@ -1,7 +1,7 @@
 // POST request to the server
-// url is address to server, data is userFormInput
+// url is address to server, data is form input
 
-const checkFormData = async ( url = '', data = {})=>{
+export const postFormData = async ( url = '', data = {})=>{
     const response = await fetch(url, {
         method: 'POST', 
         credentials: 'same-origin',
@@ -17,5 +17,3 @@ const checkFormData = async ( url = '', data = {})=>{
         console.log("error", error);
     }
 }
-
-export { checkFormData }
