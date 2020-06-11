@@ -2,41 +2,40 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Test</title>
-        <link rel="stylesheet" href="/styles/resets.css">
-        <link rel="stylesheet" href="/styles/base.css">
-        <link rel="stylesheet" href="/styles/header.css">
-        <link rel="stylesheet" href="/styles/form.css">
-        <link rel="stylesheet" href="/styles/footer.css">
+        <title>NLP</title>
     </head>
 
     <body>
 
         <header>
             <div class="">
-                Logo
+                NLP with Aylien
             </div>
             <div class="">
-                navigation
+                Type something or enter URL
             </div>
         </header>
 
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                    <input id="name" type="text" name="input" value="" placeholder="Name">
                     <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
 
             <section>
-                <strong>Form Results:</strong>
-                <div id="results"></div>
+                <strong>Results:</strong>
+                <div id="polarity">result will be here</div>
+                <div id="subjectivity">result will be here</div>
+                <div id="polarity_confidence">result will be here</div>
+                <div id="subjectvity_confidence">result will be here</div>
+                <div id="text">result will be here</div>
             </section>
         </main>
 
         <footer>
-            <p>This is a footer</p>
+            <p>Thank you for using our NLP services!</p>
         </footer>
 
     </body>

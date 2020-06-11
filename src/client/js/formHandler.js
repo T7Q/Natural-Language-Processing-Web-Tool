@@ -1,15 +1,20 @@
 function handleSubmit(event) {
     event.preventDefault()
 
+    const data = {}
     // check what text was put into the form field
     let formText = document.getElementById('name').value
-    Client.checkForName(formText)
+    Client.checkFormData(formText)
+    data.url = formText
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8080/test')
-    .then(res => res.json())
+    console.log("value: " +formText)
+    console.log("value: " +data.url)
+
+    Client.checkFormData('http://localhost:8085/api', data)
     .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
+        //update UI according to response
+        Client.updateUI(res);
     })
 }
 
