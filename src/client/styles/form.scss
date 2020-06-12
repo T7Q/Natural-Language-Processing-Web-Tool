@@ -1,7 +1,14 @@
 form {
-    border: 1px solid #545454;
+    border: none;
     border-radius: 3px;
-    padding: 40px;
+    // padding: 40px;
+
+    #button {
+        background: #A79674;
+        box-shadow: 0 1px 2px black;
+        border-radius: 3px;
+        color: white;
+    }
 }
 
 input {
@@ -9,4 +16,5 @@ input {
     width: 100%;
     line-height: 16px;
     margin: 10px 0;
+    border: none;
 }

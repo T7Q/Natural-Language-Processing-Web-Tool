@@ -1,7 +1,15 @@
+$pcolor1: #0584F2;
+$color2: #0AAFF1;
+$color3: #A7967433;
+$color4: #A796741A;
+$color5: #A79674;
+
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
+    background: linear-gradient($color2, $color3);
 }
 
 main {
@@ -9,6 +17,53 @@ main {
 }
 
 section {
-    max-width: 800px;
-    margin: 50px auto;
+    padding-top: 50px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-top: 50px;
+        color: white;
+        font-size: 2vw;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    tr, td {
+        padding: 15px 0px 15px;
+        text-align: left;
+    }
+    tr:nth-child(even){
+        background-color: $color3;
+    }
+
+    tr:nth-child(odd){
+        background-color: white;
+    }
+}
+
+.result {
+    font-size: 1.5vw;
+}
+
+
+#polarity{
+    font-size: 1.5vw;
+}
+
+#polarity_confidence{
+    font-size: 1.5vw;
+}
+
+#subjectivity{
+    font-size: 1.5vw;
+}
+
+#subjectivity_confidence{
+    font-size: 1.5vw;
+}
+#text{
+    font-size: 1vw;
 }

@@ -1,5 +1,15 @@
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 40px;
+    // justify-content: center;
+    padding: 40px 40px;
+    margin: 100px 0px 25px 0px;
+    max-width: 350px;
+    h1 {
+        font-size: 3vw;
+        color: white;
+    }
+    p {
+        margin-top: 25px;
+        font-size: 1.5vw;
+    }
 }
