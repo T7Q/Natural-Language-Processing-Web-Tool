@@ -9,29 +9,43 @@
 
         <header>
             <div class="">
-                NLP with Aylien
+                <h1>Natural language processing (NLP) with Aylien News API</h1>
             </div>
             <div class="">
-                Enter the URL of the blog article you'd like to analyse and click Submit.
+                <p>Enter the URL of the blog article you'd like to analyse and click Submit:</p>
             </div>
         </header>
-
         <main>
             <section>
                 <form class="" onsubmit="return Client.handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" placeholder="Name">
-                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" placeholder="type URL here">
+                    <input id="button" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             <section>
-
             <section>
-                <strong>Results:</strong>
-                <div id="description">This tool provides information about the article, such as</div>
-                <div id="polarity">Polarity</div>
-                <div id="polarity_confidence">Polarity confidence</div>
-                <div id="subjectivity">Subjectivity</div>
-                <div id="subjectivity_confidence">Subjectvity confidence</div>
-                <div id="text">Analysed content</div>
+                <h2>Results:</h2>
+                <table>
+                    <tr>
+                        <td class="result">Polarity</td>
+                        <td id="polarity"></td>
+                    </tr>
+                    <tr>
+                        <td class="result">Polarity confidence</td>
+                        <td id="polarity_confidence"></td>
+                    </tr>
+                    <tr>
+                        <td class="result">Subjectivity</td>
+                        <td id="subjectivity"></td>
+                    </tr>
+                    <tr>
+                        <td class="result">Subjectvity confidence</td>
+                        <td id="subjectivity_confidence"></td>
+                    </tr>
+                    <tr>
+                        <td class="result">Analysed content</td>
+                        <td id="text"></td>
+                    </tr>
+                </table>
             </section>
         </main>
 
