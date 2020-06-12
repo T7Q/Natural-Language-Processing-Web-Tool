@@ -37,7 +37,7 @@ Detailed project specifications available [here](https://review.udacity.com/#!/r
 * Fill the .env file with your API keys like this
   ```
   API_ID=**************************
-  API_KEY
+  API_KEY=**************************
   ```
 * Install npm by running ```npm install```
 * To view in develoment mode run ```npm run build-dev```, the window will open automatically
